@@ -1,0 +1,65 @@
+%link {
+    text-decoration: none;
+    color: #333;
+    &:hover {
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+%img {
+    max-width: 100%;
+    height: auto;
+}
+
+%icon {
+    background-repeat: no-repeat;
+    display: block;
+}
+
+%reset-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+%reset-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%absolute-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+%focus-orange {
+    &:focus {
+        box-shadow: 0 0 4px 2px rgba($Pizazz,.45)
+    }
+}
+
+%focus-blue {
+    &:focus {
+        box-shadow: 0 0 4px 2px rgba($DodgerBlue,.45)
+    }
+}

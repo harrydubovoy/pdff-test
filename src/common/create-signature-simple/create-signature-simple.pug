@@ -1,0 +1,32 @@
+
+include ../buttons/button.pug
+include ../inputs/form-input
+include ../top-mark/top-mark
+
+
+mixin createSignatureSimple({ icon, title, desc, mark })
+
+    - var fakeValue = 'John Smith'
+
+    .create-signature-simple&attributes(attributes)
+        +topMark({ 
+            color: 'blue', 
+            text: mark 
+        })(class='create-signature-simple__mark') 
+
+        .create-signature-simple__group
+            .create-signature-simple__group-item
+                .create-signature-simple__symbol
+                    .create-signature-simple__icon
+                        div(class=`icon-${icon}`)
+                    .create-signature-simple__title= title
+
+            .create-signature-simple__group-item.create-signature-simple__group-item--margin-right
+                .create-signature-simple__desc!= desc
+         
+                form.create-signature-simple__form                 
+                    +formInput({value: fakeValue})(class='create-signature-simple__input')
+                    +button({ text: 'Sign', type: 'submit' })(class='button--blue create-signature-simple__button')
+
+            .create-signature-simple__group-item
+                .create-signature-simple__preview= fakeValue

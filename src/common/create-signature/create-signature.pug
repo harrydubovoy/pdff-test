@@ -1,0 +1,29 @@
+
+include ../create-signature-simple/create-signature-simple
+include ../create-signature-option/create-signature-option
+
+include ../top-mark/top-mark
+
+mixin createSignature()
+
+    ul.create-signature
+        li.create-signature__item.create-signature__item--full
+            +createSignatureSimple({ 
+                icon: 'type',
+                title: 'Type',
+                desc: 'Easy way to create your signature or initials type your name or select an&nbsp;option from the bottom to create your signature or initials.',
+                mark: 'fast'
+            })
+              
+        each option in createSignatureList
+            li.create-signature__item
+                +createSignatureOption({
+                    icon: option.icon, 
+                    title: option.title, 
+                    desc: option.desc 
+                })
+                    if option.mark
+                        +topMark({ 
+                            color: 'blue', 
+                            text: option.mark 
+                        })(class='create-signature-option__mark')

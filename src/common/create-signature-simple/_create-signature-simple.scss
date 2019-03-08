@@ -1,0 +1,76 @@
+.create-signature-simple {
+    position: relative;
+    border-radius: 4px;
+    border: solid 1px $Alto;
+    padding: 24px;
+}
+
+.create-signature-simple__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.create-signature-simple__title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    color: $TundoraDark;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.create-signature-simple__desc {
+    font-size: 12px;
+    line-height: 1.35;
+    color: $DoveGray;
+    margin-bottom: 10px;
+}
+
+.create-signature-simple__symbol {
+    margin-right: 30px;
+}
+
+.create-signature-simple__icon {
+    margin-bottom: 10px;
+}
+
+.create-signature-simple__form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.create-signature-simple__input {    
+    margin-right: 10px;
+}
+
+.create-signature-simple__button {    
+    width: 100px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.create-signature-simple__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size(180, 75);
+    border-radius: 4px;
+    border: solid 1px $Silver;
+    background-color: $Alabaster;
+    font-family: HanziPenSC-W3;
+    font-size: 34px;
+    color: $TundoraDark;
+}
+
+.create-signature-simple__group {
+    display: flex;
+    align-items: center;
+}
+
+.create-signature-simple__group-item {
+    &--margin-right {
+        margin-right: 16px;
+    }
+}

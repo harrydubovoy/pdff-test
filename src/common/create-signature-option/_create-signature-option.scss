@@ -1,0 +1,44 @@
+.create-signature-option {
+    @extend %link;
+    @extend %focus-blue;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    border-radius: 4px;  
+    border: 1px solid $Alto;
+    @include transition-in;
+    &:hover {
+        border: 1px solid $DodgerBlue;
+        @include transition-out;
+    }
+}
+
+.create-signature-option__icon {
+    margin-right: 14px;
+}
+
+.create-signature-option__title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    color: $TundoraDark;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.create-signature-option__desc {
+    font-size: 12px;
+    line-height: 1.35;
+    color: $DoveGray;
+
+    &_--argin-bottom {
+        margin-bottom: 10px;
+    }
+}
+
+.create-signature-option__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

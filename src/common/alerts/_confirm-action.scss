@@ -1,0 +1,30 @@
+.confirm-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.confirm-action__choose {
+    display: flex;
+    align-items: center;
+}
+
+.confirm-action__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;  
+  margin-bottom: 5px;
+}
+
+.confirm-action__desc {
+  line-height: 1.67;
+  color: $Gray;
+}
+
+.confirm-action__button {
+    width: 64px;
+    height: 32px;
+    margin-right: 8px;    
+    border: none;
+}

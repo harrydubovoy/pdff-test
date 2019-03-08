@@ -1,0 +1,38 @@
+include ../inputs/edit-field
+include ../buttons/button
+
+mixin documentItem({ document, i })  
+
+    .document-item(class=`${ !document.loaded ? 'document-item--disabled' : '' }`)
+        .document-item__drag
+            .icon-drag
+            
+        .document-item__icon
+            div(class=`icon-document-type-${document.iconType}`)
+            if block
+                block
+        
+        .document-item__body
+            +editField({
+                name: 'name-input', 
+                value: `${++i}. ${document.name || 'Document name'}`, 
+                disabled: disabled=!document.loaded 
+            })(class='document-list__edit-field')
+            .document-item__desc= document.description
+
+        if document.loaded
+
+            .document-item__actions
+                +button({ 
+                    text: document.actionType
+                })(class='button--empty-orange document-item__button')
+                +button({})(class='button--empty-orange document-item__button-delete')
+                    .icon-delete
+
+        else
+            .document-item__loading
+                .icon-load.icon-load_active
+
+
+
+        

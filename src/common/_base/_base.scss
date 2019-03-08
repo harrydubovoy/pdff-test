@@ -1,0 +1,47 @@
+
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Open-Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-stretch: normal;
+  font-weight: normal;
+  color: $Tundora;
+  box-sizing: border-box;
+  @include media(576) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.main {
+  flex: 1 0 0;
+}
+
+.wrapper-small {
+  @include wrapper(600);
+  padding: 0 15px;
+}
+  
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.background-store,
+.modal-store,
+.svg-store,
+.hidden {
+  display: none;
+}

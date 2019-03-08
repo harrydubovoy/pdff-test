@@ -1,0 +1,52 @@
+.edit-field {
+    width: 100%;
+    display: block;
+    position: relative;
+    &:hover {
+        .edit-field__icon{
+            opacity: 1;
+            @include transition-out;
+        }
+    }
+
+    & .edit-field__input:focus + .edit-field__icon{
+        opacity: 0;
+        @include transition-out;
+    }
+}
+
+.edit-field__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba($Alto, 0);
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    @include transition-in;
+    &:hover {
+        border-bottom: 1px solid $Alto;
+        @include transition-out;
+    }
+    &:focus, &:active {
+        outline: none;
+        border-bottom: 1px solid $Pizazz;
+        @include transition-out;
+    }
+
+    &:disabled {
+        background-color: $White;
+        border-bottom: 1px solid rgba($Alto, 0); 
+    }
+}
+
+.edit-field__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    @include square(14);
+    @include transition-in;
+}

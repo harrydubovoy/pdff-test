@@ -1,0 +1,10 @@
+
+
+
+mixin uploadField({ name, icon = '', text, value = '', disabled = false })
+    .upload-field&attributes(attributes)
+        input.upload-field__input(type="file" name=name value=value disabled=disabled)
+        .upload-field__mask
+            .upload-field__icon
+                div(class=`icon-${icon}`)
+            .upload-field__text= text

@@ -1,0 +1,80 @@
+createSignatureList:
+  - icon: draw
+    title: Draw
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: null
+  - icon: upload-cloud
+    title: Upload
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: null
+  - icon: camera
+    title: Use Camera
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: null
+  - icon: qr-mobile
+    title: Via QR code
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: fast
+  - icon: sms-mobile
+    title: Use mobile via SMS
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: null
+  - icon: email-mobile
+    title: Use mobile via email
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: null
+documentList:
+  - iconType: simple
+    name: Simple document
+    description: 10 pages / No fillable fields
+    actionType: Add fillable fields
+    mark: ''
+    loaded: true
+  - iconType: simple
+    name: Fillable fields
+    description: 1 pages / 2 fillable fields
+    actionType: Edit fillable fields
+    mark: fillable
+    loaded: true
+  - iconType: simple
+    name: Created document
+    description: 4 pages / 2 fillable fields
+    actionType: Add fillable fields
+    mark: ''
+    loaded: true
+  - iconType: form
+    name: airSlate Form
+    description: 10 questions
+    actionType: Edit form settings
+    mark: ''
+    loaded: true
+  - iconType: generate
+    name: Generated document
+    description: 2 pages / 12 tags used
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  - iconType: user-auth
+    name: User Authentication
+    description: ''
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  - iconType: payment
+    name: Payment order form
+    description: ''
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  - iconType: attachment
+    name: Attachment request
+    description: ''
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  - iconType: simple
+    name: null
+    description: Uploading...
+    actionType: null
+    mark: ''
+    loaded: false

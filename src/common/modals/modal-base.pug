@@ -1,0 +1,17 @@
+
+include ../buttons/button.pug
+
+mixin modalBase({ title = '', icon = '' })
+    .modal-overlay.modal-overlay_visible
+        .modal.create-signature-modal.modal_show
+            +button({})(class='modal__close')
+                .icon-close
+            .modal__head
+                .modal__icon
+                    div(class=`icon-${icon}`)
+                .modal__title= title
+
+
+            .modal__body
+                if block
+                    block

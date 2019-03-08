@@ -1,0 +1,16 @@
+
+include ../create-signature/create-signature
+include modal-base
+
+mixin modalCreateSignature()
+
+    +modalBase({ 
+        title: 'Create Your Signature / Initials', 
+        icon: 'create-signature' 
+    })
+        +createSignature()
+        
+
+
+
+

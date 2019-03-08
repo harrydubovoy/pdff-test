@@ -1,0 +1,29 @@
+@import '../../_base/index';
+@import '../../alerts/confirm-action';
+@import '../../buttons/button';
+@import '../../document-list/document-list';
+@import '../../document-item/document-item';
+@import '../../icons/icon-action';
+@import '../../icons/icon-document-type';
+@import '../../icons/icon-marks';
+@import '../../inputs/edit-field';
+@import '../../inputs/upload-field';
+
+
+
+
+.document-flow {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.document-flow__title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    color: $TundoraDark;
+    margin-bottom: 10px;    
+}

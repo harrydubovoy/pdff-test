@@ -1,0 +1,5 @@
+mixin editField({ name, value, disabled })
+    .edit-field&attributes(attributes)
+        input.edit-field__input(type="text" name=name value=value disabled=disabled)
+        .edit-field__icon
+            .icon-edit

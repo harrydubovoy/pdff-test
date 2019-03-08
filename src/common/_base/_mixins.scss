@@ -1,0 +1,33 @@
+@mixin media($media) {
+  @media screen and (max-width: $media + px) {
+    @content;
+  }
+}
+
+@mixin transition-in {
+  transition: all .25s ease-in;
+}
+@mixin transition-out {
+  transition: all .25s ease-out;
+}
+
+@mixin wrapper($width) {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  position: relative;
+  max-width: $width + px;
+  min-width: $width + px;
+}
+
+@mixin size($width, $height) {
+  width: $width + px;
+  height: $height + px;
+}
+
+@mixin square($param) {
+  width: $param + px;
+  height: $param + px;
+}
+

@@ -1,0 +1,31 @@
+createSignatureList:
+  -
+    icon: draw
+    title: Draw
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark:
+  -
+    icon: upload-cloud
+    title: Upload
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark:
+  -
+    icon: camera
+    title: Use Camera
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark:
+  -
+    icon: qr-mobile
+    title: Via QR code
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark: fast
+  -
+    icon: sms-mobile
+    title: Use mobile via SMS
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark:
+  -
+    icon: email-mobile
+    title: Use mobile via email
+    desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    mark:

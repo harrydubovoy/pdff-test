@@ -1,0 +1,89 @@
+.document-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 72px;
+    padding: 12px 24px;
+    border: 1px solid $Alto;
+
+    & + .document-item {
+        margin-top: -1px;
+    }
+
+    &--disabled {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;            
+            z-index: 2;            
+            background-color: rgba($White, .5);
+            @extend %absolute-full;
+        }
+    }
+}
+
+
+.document-item__icon {
+    margin-right: 12px;
+    position: relative;
+}
+
+.document-item__drag {
+    position: absolute;
+    left: 9px;
+}
+
+.document-item__body {
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.document-item__desc {
+    font-size: 12px;
+    line-height: 1.67;
+    color: $Gray;
+}
+
+.document-item__mark {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.document-item__actions {
+    display: flex;
+    align-items: center;
+}
+
+.document-item__button {
+    width: 136px;
+    height: 32px;  
+    margin-right: 8px;
+}
+
+.document-item__button-delete {
+    width: 32px;
+    height: 32px;
+    border: solid 1px rgba($Pizazz, 0);
+    &:hover {
+        border: solid 1px $Pizazz;
+    }
+
+}
+
+.document-item__drag {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    bottom: 0;
+    margin: auto 0;
+    @include square(16);
+    cursor: pointer;
+}
+
+.document-item__loading {
+    position: relative;
+    z-index: 3;
+    @include square(32);
+    @extend %flex-center;
+}

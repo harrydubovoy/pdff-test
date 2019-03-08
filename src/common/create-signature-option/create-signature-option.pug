@@ -1,0 +1,11 @@
+mixin createSignatureOption({ icon, title, desc })
+  
+    a(href="#").create-signature-option&attributes(attributes)
+        .create-signature-option__icon
+            div(class=`icon-${icon}`)
+
+        .create-signature-option__info
+            .create-signature-option__title= title
+            .create-signature-option__desc= desc
+        if block
+            block

@@ -1,0 +1,14 @@
+include ../buttons/button
+
+
+mixin confirmAction({ title, desc })
+    .confirm-action&attributes(attributes)
+        .confirm-action__body
+            h4.confirm-action__title= title
+            .confirm-action__desc= desc
+ 
+        .confirm-action__choose
+            +button({text: 'No'})(class='button--light-grey confirm-action__button')
+            +button({text: 'Yes'})(class='button--orange confirm-action__button')
+
+

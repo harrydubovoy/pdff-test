@@ -1,0 +1,66 @@
+.button {
+    @extend %flex-center;
+    @extend %reset-button;
+    color: $Tundora;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 4px;
+    @include transition-in;
+
+    &:hover {
+        @include transition-out;
+    }
+
+    &:disabled {
+        cursor: default;
+        opacity: .5;
+
+        &:hover {
+            color: currentColor;
+        }
+    }
+
+    &--empty-orange {
+        @extend %focus-orange;
+        background-color: $White;
+        border: 1px solid $Pizazz;
+        
+        &:hover {
+            color: $Pizazz;
+        }
+    }
+
+    &--orange {
+        @extend %focus-orange;
+        background-color: $Pizazz;
+        color: $White;
+
+        &:hover {
+            background-color: rgba($Pizazz, .8);
+        }
+    }
+
+
+
+    &--light-grey {
+        @extend %focus-orange;
+        background-color: $Mercury;    
+
+        &:hover {
+            background-color: rgba($Mercury, .5);
+        }
+    }
+
+
+    &--blue {
+        @extend %focus-blue;
+        color: $White;
+        background-color: $DodgerBlue;
+
+        &:hover {
+            background-color: rgba($DodgerBlue, .8);
+        }
+    }
+}

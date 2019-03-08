@@ -1,0 +1,19 @@
+.form-input {
+    @extend %reset-input;
+    @extend %focus-blue;
+    @include transition-in;
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px $SilverChalice;
+    background-color: $White;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    
+    &:focus {
+        @include transition-out;
+    }
+}

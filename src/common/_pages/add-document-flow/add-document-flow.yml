@@ -1,0 +1,67 @@
+documentList:
+  -
+    iconType: simple
+    name: Simple document
+    description: 10 pages / No fillable fields
+    actionType: Add fillable fields
+    mark: ''
+    loaded: true
+  -
+    iconType: simple
+    name: Fillable fields
+    description: 1 pages / 2 fillable fields
+    actionType: Edit fillable fields
+    mark: 'fillable'
+    loaded: true
+  -
+    iconType: simple
+    name: Created document
+    description: 4 pages / 2 fillable fields
+    actionType: Add fillable fields
+    mark: ''
+    loaded: true
+  -
+    iconType: form
+    name: airSlate Form
+    description: 10 questions
+    actionType: Edit form settings
+    mark: ''
+    loaded: true
+  -
+    iconType: generate
+    name: Generated document
+    description: 2 pages / 12 tags used
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  -
+    iconType: user-auth
+    name: User Authentication
+    description: ''
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  -
+    iconType: payment
+    name: Payment order form
+    description: ''
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  -
+    iconType: attachment
+    name: Attachment request
+    description: ''
+    actionType: Edit settings
+    mark: ''
+    loaded: true
+  -
+    iconType: simple
+    name: 
+    description: Uploading...
+    actionType: 
+    mark: ''
+    loaded: false
+      
+    
+    

@@ -1,0 +1,24 @@
+.document-list__confirm {
+    min-height: 72px;
+    border: 1px solid $Alto;
+    margin-top: -1px;
+}
+
+.document-list__empty {
+    @extend %flex-center;
+    min-height: 72px;
+    border: 1px solid $Alto;
+    margin-top: -1px;
+    opacity: .5;
+}
+
+.document-list__empty-icon {
+    margin-right: 4px;
+}
+
+.document-list__add-new {
+    padding: 16px;
+    min-height: 64px;
+    border: 1px solid $Alto;
+    margin-top: -1px;
+}

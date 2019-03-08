@@ -1,0 +1,41 @@
+extends ../../../project
+
+include ../../alerts/confirm-action
+include ../../document-item/document-item
+include ../../inputs/upload-field
+
+block title
+    title Add document flow
+
+block stylesheet
+    link(rel="stylesheet", href="css/add-document-flow.css")
+
+block content
+
+    .wrapper-small
+        .document-flow
+            h2.document-flow__title Add at least one document to your flow
+            
+            form.document-list
+                .document-list__keep
+                    each document, i in documentList
+                        +documentItem({ document, i })
+                            if document.mark
+                                .document-item__mark(class=`icon-mark-${document.mark}`)
+
+                +confirmAction({
+                    title: 'Delete from list', 
+                    desc: 'Are you sure you want to delete the following document?' 
+                })(class="document-list__confirm")
+
+                .document-list__empty
+                    .document-list__empty-icon
+                        .icon-upload
+                    .document-list__text No documents
+
+                .document-list__add-new
+                    +uploadField({
+                        name: 'add-new-document',
+                        icon: 'add',
+                        text: 'Add New'
+                    })
